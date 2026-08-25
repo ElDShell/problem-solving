@@ -21,8 +21,8 @@ int main(){
     sort(v.begin(), v.end(), greater<int>()); // descending order
     sort(v.rbegin(), v.rend()); //descending order
     bool b = binary_search(v.begin(), v.end(), 5);
-    int u = upper_bound(v.begin(), v.end(), 5) - v.begin();
-    int l = lower_bound(v.begin(), v.end(), 5) - v.begin();
+    int u = upper_bound(v.begin(), v.end(), 5) - v.begin(); // return the first element that is greater than or equal to 5
+    int l = lower_bound(v.begin(), v.end(), 5) - v.begin(); // return the first element that is greater than 5
     int mx = *max_element(v.begin(), v.end());
     int mi = *min_element(v.begin(), v.end());
     reverse(v.begin(), v.end());
